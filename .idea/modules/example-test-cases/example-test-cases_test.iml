@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":example-test-cases:test" external.linked.project.path="$MODULE_DIR$/../../../example-test-cases" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="epamPracticeTask-OpenWeatherMap-" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../../example-test-cases/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../example-test-cases/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../example-test-cases/src/test/groovy" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example-test-cases/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example-test-cases/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="example-test-cases_main" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Gradle: xmlunit:xmlunit:1.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.spockframework:spock-spring:0.7-groovy-2.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.athaydes:spock-reports:1.1" level="project" />
+    <orderEntry type="module" module-name="core_main" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.spockframework:spock-core:0.7-groovy-2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jms:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.oracle:ojdbc6:11.2.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-all:5.10.0" level="project" />
+    <orderEntry type="library" name="Gradle: javax:javaee-api:7.0" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit-dep:4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:3.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.mail:javax.mail:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-all:2.3.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="example-test-cases_main" />
+</module>

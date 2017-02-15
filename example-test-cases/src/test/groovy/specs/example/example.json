@@ -1,0 +1,41 @@
+{
+  "coord": {
+    "lon": 23.7,
+    "lat": 52.1
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "02d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 273.792,
+    "pressure": 1030.16,
+    "humidity": 100,
+    "temp_min": 273.792,
+    "temp_max": 273.792,
+    "sea_level": 1050.94,
+    "grnd_level": 1030.16
+  },
+  "wind": {
+    "speed": 2.06,
+    "deg": 0.500885
+  },
+  "clouds": {
+    "all": 8
+  },
+  "dt": 1487156591,
+  "sys": {
+    "message": 0.0065,
+    "country": "BY",
+    "sunrise": 1487137164,
+    "sunset": 1487173199
+  },
+  "id": 629634,
+  "name": "Brest",
+  "cod": 200
+}

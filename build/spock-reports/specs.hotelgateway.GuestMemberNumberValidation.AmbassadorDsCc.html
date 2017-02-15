@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+<head>
+<style>body {
+  font-family: Helvetica;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 4px;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+  
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for specs.hotelgateway.GuestMemberNumberValidation.AmbassadorDsCc</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Tue Sep 16 12:46:28 FET 2014 by Uladzimir_Ramaniuk</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>2.076 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure'>Retrieve Guest - Ambassador, DS CC</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I send a message with club number</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Response message has correct format</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>And:</div>
+</td>
+<td>
+<div class='block-text'>Member has DS credit card</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response.startsWith(&quot;CR \nVA:A/${ECHO}\nFG:P${clubNumber}/&quot;)<br/>|        |                      |            |<br/>|        false                  ECHO         103022005<br/>org.codehaus.jackson.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;)<br/> at [Source: java.io.StringReader@37860ab0; line: 1, column: 2]<br/><br/>at org.codehaus.jackson.JsonParser._constructError(JsonParser.java:1433)<br/><br/>at org.codehaus.jackson.impl.JsonParserMinimalBase._reportError(JsonParserMinimalBase.java:521)<br/><br/>at org.codehaus.jackson.impl.JsonParserMinimalBase._reportUnexpectedChar(JsonParserMinimalBase.java:442)<br/><br/>at org.codehaus.jackson.impl.ReaderBasedParser._handleUnexpectedValue(ReaderBasedParser.java:1198)<br/><br/>at org.codehaus.jackson.impl.ReaderBasedParser.nextToken(ReaderBasedParser.java:485)<br/><br/>at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2770)<br/><br/>at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2718)<br/><br/>at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1870)<br/><br/>at com.ihg.grs.hotelgateway.processors.aci.RetrieveACITVServerResponseProcessor.process(RetrieveACITVServerResponseProcessor.java:35)<br/><br/>at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)<br/><br/>at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:72)<br/><br/>at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:398)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:118)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:80)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:51)<br/><br/>at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:110)<br/><br/>at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:72)<br/><br/>at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:398)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:118)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:80)<br/><br/>at org.apache.camel.processor.FilterProcessor.process(FilterProcessor.java:58)<br/><br/>at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:72)<br/><br/>at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:398)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:118)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:80)<br/><br/>at org.apache.camel.processor.FilterProcessor.process(FilterProcessor.java:58)<br/><br/>at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:72)<br/><br/>at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:398)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:118)<br/><br/>at org.apache.camel.processor.Pipeline.process(Pipeline.java:80)<br/><br/>at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:191)<br/><br/>at org.apache.camel.component.jetty.CamelContinuationServlet.service(CamelContinuationServlet.java:151)<br/><br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)<br/><br/>at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)<br/><br/>at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)<br/><br/>at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:136)<br/><br/>at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:44)<br/><br/>at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467)<br/><br/>at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499)<br/><br/>at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)<br/><br/>at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)<br/><br/>at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)<br/><br/>at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)<br/><br/>at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)<br/><br/>at org.eclipse.jetty.server.Server.handle(Server.java:370)<br/><br/>at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)<br/><br/>at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)<br/><br/>at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)<br/><br/>at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)<br/><br/>at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)<br/><br/>at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)<br/><br/>at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)<br/><br/>at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)<br/><br/>at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)<br/><br/>at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)<br/><br/>at java.lang.Thread.run(Thread.java:724)<br/></pre>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

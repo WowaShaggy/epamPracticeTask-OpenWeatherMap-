@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/epamPracticeTask-OpenWeatherMap-.iml" filepath="$PROJECT_DIR$/.idea/modules/epamPracticeTask-OpenWeatherMap-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases.iml" filepath="$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases.iml" group="example-test-cases" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases_main.iml" filepath="$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases_main.iml" group="example-test-cases" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases_test.iml" filepath="$PROJECT_DIR$/.idea/modules/example-test-cases/example-test-cases_test.iml" group="example-test-cases" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module.iml" filepath="$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module.iml" group="wowa-module" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module_main.iml" group="wowa-module" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wowa-module/wowa-module_test.iml" group="wowa-module" />
+    </modules>
+  </component>
+</project>

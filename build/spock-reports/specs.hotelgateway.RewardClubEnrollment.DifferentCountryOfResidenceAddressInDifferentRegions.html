@@ -1,0 +1,371 @@
+<!DOCTYPE html><html>
+<head>
+<style>body {
+  font-family: Helvetica;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 4px;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+  
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for specs.hotelgateway.RewardClubEnrollment.DifferentCountryOfResidenceAddressInDifferentRegions</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Thu Sep 04 13:45:58 FET 2014 by Uladzimir_Ramaniuk</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>13.009 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure'>Enroll Member For Different Country Of Residence, and Address in different regions (test cases)</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>I receive message with club number</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I retrieve member by club number</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Member has details as in enrollment request</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>countryCodeValue</th>
+<th class='ex-header'>cityValue</th>
+<th class='ex-header'>stateValue</th>
+<th class='ex-header'>zipCodeValue</th>
+<th class='ex-header'>countryOfResidenceValue</th>
+<th class='ex-header'>countryOfResidenceName</th>
+<th class='ex-header'>countryOfResidenceGdsCode</th>
+</thead>
+<tbody>
+<tr class='ex-fail'>
+<td class='ex-value'>0925</td>
+<td class='ex-value'>London</td>
+<td class='ex-value'></td>
+<td class='ex-value'>S11A 2AA</td>
+<td class='ex-value'>0925</td>
+<td class='ex-value'>United Kingdom</td>
+<td class='ex-value'>UK</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>0280</td>
+<td class='ex-value'>Beijing</td>
+<td class='ex-value'></td>
+<td class='ex-value'>111111</td>
+<td class='ex-value'>0280</td>
+<td class='ex-value'>China</td>
+<td class='ex-value'>CN</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>0595</td>
+<td class='ex-value'>Business City</td>
+<td class='ex-value'></td>
+<td class='ex-value'>12345</td>
+<td class='ex-value'>0595</td>
+<td class='ex-value'>Mexico</td>
+<td class='ex-value'>MX</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>0394</td>
+<td class='ex-value'>B SAARBRÜCKEN 1</td>
+<td class='ex-value'></td>
+<td class='ex-value'>D-661</td>
+<td class='ex-value'>0394</td>
+<td class='ex-value'>Germany</td>
+<td class='ex-value'>DE</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>0350</td>
+<td class='ex-value'>Paris</td>
+<td class='ex-value'></td>
+<td class='ex-value'>222222</td>
+<td class='ex-value'>0350</td>
+<td class='ex-value'>France</td>
+<td class='ex-value'>FR</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>0001</td>
+<td class='ex-value'>Atlanta</td>
+<td class='ex-value'>GA</td>
+<td class='ex-value'>30001</td>
+<td class='ex-value'>0001</td>
+<td class='ex-value'>United States</td>
+<td class='ex-value'>US</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>
+<div class='spec-status'>0/6 passed</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<div>[0925, London, , S11A 2AA, 0925, United Kingdom, UK]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530472////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@LONDON S11A 2AA@UNITED KINGDOM<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/UK<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530472////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@LONDON S11A 2AA@UNITED KINGDOM\nGT:V/VS4111111111111111/0318\nVE:V/(0925)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530472////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@LONDON S11A 2AA@UNITED KINGDOM\nGT:V/VS4111111111111111/0318\nVE:V/(UK--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530472////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@LONDON S11A 2AA@UNITED KINGDOM<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0925<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[0280, Beijing, , 111111, 0280, China, CN]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530485////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@BEIJING 111111@CHINA<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/CN<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530485////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@BEIJING 111111@CHINA\nGT:V/VS4111111111111111/0318\nVE:V/(0280)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530485////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@BEIJING 111111@CHINA\nGT:V/VS4111111111111111/0318\nVE:V/(CN--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530485////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@BEIJING 111111@CHINA<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0280<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[0595, Business City, , 12345, 0595, Mexico, MX]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530498////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@BUSINESS CITY 12345@MEXICO<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/MX<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530498////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@BUSINESS CITY 12345@MEXICO\nGT:V/VS4111111111111111/0318\nVE:V/(0595)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530498////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@BUSINESS CITY 12345@MEXICO\nGT:V/VS4111111111111111/0318\nVE:V/(MX--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530498////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@BUSINESS CITY 12345@MEXICO<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0595<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[0394, B SAARBRÜCKEN 1, , D-661, 0394, Germany, DE]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530502////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@B SAARBRÜCKEN 1 D-661@GERMANY<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/DE<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530502////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@B SAARBRÜCKEN 1 D-661@GERMANY\nGT:V/VS4111111111111111/0318\nVE:V/(0394)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530502////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@B SAARBRÜCKEN 1 D-661@GERMANY\nGT:V/VS4111111111111111/0318\nVE:V/(DE--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530502////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@B SAARBRÜCKEN 1 D-661@GERMANY<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0394<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[0350, Paris, , 222222, 0350, France, FR]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530515////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@PARIS 222222@FRANCE<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/FR<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530515////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@PARIS 222222@FRANCE\nGT:V/VS4111111111111111/0318\nVE:V/(0350)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530515////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@PARIS 222222@FRANCE\nGT:V/VS4111111111111111/0318\nVE:V/(FR--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530515////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@PARIS 222222@FRANCE<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0350<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[0001, Atlanta, GA, 30001, 0001, United States, US]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == expectedResult<br/>|        |  |<br/>|        |  CR<br/>|        |  VA:A/ECHO<br/>|        |  FG:P103530528////P/00000000<br/>|        |  NM:V/N////TESTER/ROBERT<br/>|        |  PH:V//NONE<br/>|        |  AH:V/N//TESTER R@TESTER STREET 10@ATLANTA GA 30001@UNITED STATES<br/>|        |  GT:V/VS4111111111111111/0318<br/>|        |  VE:V/US<br/>|        false<br/>|        15 differences (91% similarity)<br/>|        CR\nVA:A/ECHO\nFG:P103530528////P/00000000\nNM:V/N////TESTER/ROBERT\n(-----------~)AH:V/N//TESTER R@TESTER STREET 10@ATLANTA GA 30001@UNITED STATES\nGT:V/VS4111111111111111/0318\nVE:V/(0001)\n<br/>|        CR\nVA:A/ECHO\nFG:P103530528////P/00000000\nNM:V/N////TESTER/ROBERT\n(PH:V//NONE\n)AH:V/N//TESTER R@TESTER STREET 10@ATLANTA GA 30001@UNITED STATES\nGT:V/VS4111111111111111/0318\nVE:V/(US--)\n<br/>CR<br/>VA:A/ECHO<br/>FG:P103530528////P/00000000<br/>NM:V/N////TESTER/ROBERT<br/>AH:V/N//TESTER R@TESTER STREET 10@ATLANTA GA 30001@UNITED STATES<br/>GT:V/VS4111111111111111/0318<br/>VE:V/0001<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

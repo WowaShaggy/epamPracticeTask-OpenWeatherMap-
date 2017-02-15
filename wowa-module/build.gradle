@@ -1,0 +1,21 @@
+version 'unspecified'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile("junit:junit:4.11")
+    testCompile("xmlunit:xmlunit:1.5")
+    testCompile("org.spockframework:spock-spring:0.7-groovy-2.0")
+    testCompile("com.athaydes:spock-reports:1.1")
+    testCompile project(":core")
+
+
+}

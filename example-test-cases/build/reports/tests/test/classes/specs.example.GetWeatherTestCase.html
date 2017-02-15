@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class specs.example.GetWeatherTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class specs.example.GetWeatherTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/specs.example.html">specs.example</a> &gt; GetWeatherTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.316s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="User should be able to retrieve weather"></a>
+<h3 class="failures">User should be able to retrieve weather</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:49)
+	at org.spockframework.spring.SpringInterceptor.interceptSetupMethod(SpringInterceptor.java:42)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:28)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'weather.host.url' in string value &quot;${weather.host.url}&quot;
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:173)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:125)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:767)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:785)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:775)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:817)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:745)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:951)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:633)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 28 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">User should be able to retrieve weather</td>
+<td>0.316s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-02-14 17:14:17 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:199 - Retrieved @ContextConfiguration [@org.springframework.test.context.ContextConfiguration(inheritInitializers=true, loader=interface org.springframework.test.context.ContextLoader, initializers=[], classes=[class com.ihg.middleware.context.ExampleContext], name=, locations=[], value=[], inheritLocations=true)] for declaring class [com.ihg.middleware.test.ExampleTestCase].
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:206 - Resolved context configuration attributes: [ContextConfigurationAttributes@a7fa073 declaringClass = 'com.ihg.middleware.test.ExampleTestCase', locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:161 - Processing ContextLoader for context configuration attributes [ContextConfigurationAttributes@a7fa073 declaringClass = 'com.ihg.middleware.test.ExampleTestCase', locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:178 - Using default ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:601 - Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@a7fa073 declaringClass = 'com.ihg.middleware.test.ExampleTestCase', locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-02-14 17:14:17 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@a7fa073 declaringClass = 'com.ihg.middleware.test.ExampleTestCase', locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2017-02-14 17:14:17 TRACE ContextLoaderUtils:435 - Processing context initializers for context configuration attributes [ContextConfigurationAttributes@a7fa073 declaringClass = 'com.ihg.middleware.test.ExampleTestCase', locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-02-14 17:14:17 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:17 DEBUG TestContextManager:186 - @TestExecutionListeners is not present for class [specs.example.GetWeatherTestCase]: using defaults.
+2017-02-14 17:14:17 TRACE TestContextManager:140 - Registering TestExecutionListener: org.springframework.test.context.web.ServletTestExecutionListener@42d9216f
+2017-02-14 17:14:17 TRACE TestContextManager:140 - Registering TestExecutionListener: org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a30019d
+2017-02-14 17:14:17 TRACE TestContextManager:140 - Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ae41ccd
+2017-02-14 17:14:17 TRACE TestContextManager:140 - Registering TestExecutionListener: org.springframework.test.context.transaction.TransactionalTestExecutionListener@117f33a5
+Configuring com.athaydes.spockframework.report.SpockReportExtension
+2017-02-14 17:14:18 TRACE TestContextManager:282 - beforeTestClass(): class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:18 TRACE TestContextManager:315 - prepareTestInstance(): instance [specs.example.GetWeatherTestCase@3476895c]
+2017-02-14 17:14:18 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@232708ac testClass = GetWeatherTestCase, testInstance = specs.example.GetWeatherTestCase@3476895c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1aa5e19 testClass = GetWeatherTestCase, locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2017-02-14 17:14:18 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@1aa5e19 testClass = GetWeatherTestCase, locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2017-02-14 17:14:18 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1aa5e19 testClass = GetWeatherTestCase, locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-02-14 17:14:18 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2017-02-14 17:14:18 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-02-14 17:14:18 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-02-14 17:14:18 DEBUG AnnotationConfigContextLoader:171 - Registering annotated classes: {class com.ihg.middleware.context.ExampleContext}
+2017-02-14 17:14:18 INFO  GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@23ffd9c8: startup date [Tue Feb 14 17:14:18 MSK 2017]; root of context hierarchy
+2017-02-14 17:14:18 DEBUG GenericApplicationContext:540 - Bean factory for org.springframework.context.support.GenericApplicationContext@23ffd9c8: org.springframework.beans.factory.support.DefaultListableBeanFactory@195e041c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,exampleContext]; root of factory hierarchy
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG ConfigurationClassBeanDefinitionReader:269 - Registering bean definition for @Bean method com.ihg.middleware.context.ExampleContext.weatherApiHttpClient()
+2017-02-14 17:14:18 DEBUG ConfigurationClassBeanDefinitionReader:269 - Registering bean definition for @Bean method com.ihg.middleware.context.ExampleContext.searchRegionsApiHttpClient()
+2017-02-14 17:14:18 DEBUG ConfigurationClassBeanDefinitionReader:269 - Registering bean definition for @Bean method com.ihg.middleware.context.ExampleContext.propertyPlaceholderConfigurer()
+2017-02-14 17:14:18 DEBUG ConfigurationClassBeanDefinitionReader:269 - Registering bean definition for @Bean method com.ihg.middleware.context.ExampleContext.restTemplate()
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'propertyPlaceholderConfigurer'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'propertyPlaceholderConfigurer'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'exampleContext'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'exampleContext'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'exampleContext' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'exampleContext'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'propertyPlaceholderConfigurer' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'propertyPlaceholderConfigurer'
+2017-02-14 17:14:18 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [conf/environments/null/example.properties]
+2017-02-14 17:14:18 WARN  PropertyPlaceholderConfigurer:181 - Could not load properties from class path resource [conf/environments/null/example.properties]: class path resource [conf/environments/null/example.properties] cannot be opened because it does not exist
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-02-14 17:14:18 INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-02-14 17:14:18 DEBUG GenericApplicationContext:807 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@226f4f07]
+2017-02-14 17:14:18 DEBUG GenericApplicationContext:831 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@17523674]
+2017-02-14 17:14:18 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@195e041c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,exampleContext,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,weatherApiHttpClient,searchRegionsApiHttpClient,propertyPlaceholderConfigurer,restTemplate]; root of factory hierarchy
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'exampleContext'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'weatherApiHttpClient'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'weatherApiHttpClient'
+2017-02-14 17:14:18 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'exampleContext'
+2017-02-14 17:14:18 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a30019d] to prepare test instance [specs.example.GetWeatherTestCase@3476895c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:49)
+	at org.spockframework.spring.SpringInterceptor.interceptSetupMethod(SpringInterceptor.java:42)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:28)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:319)
+	at org.spockframework.runtime.BaseSpecRunner.invokeSetup(BaseSpecRunner.java:279)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:330)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:311)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:223)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:214)
+	at org.spockframework.runtime.BaseSpecRunner.runSimpleFeature(BaseSpecRunner.java:205)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:330)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:311)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:175)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:152)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:330)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:311)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:91)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:82)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'weather.host.url' in string value &quot;${weather.host.url}&quot;
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:173)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:125)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:767)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:785)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:775)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:817)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:745)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:951)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:633)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 68 more
+2017-02-14 17:14:18 TRACE TestContextManager:439 - afterTestClass(): class [specs.example.GetWeatherTestCase]
+2017-02-14 17:14:18 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@232708ac testClass = GetWeatherTestCase, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1aa5e19 testClass = GetWeatherTestCase, locations = '{}', classes = '{class com.ihg.middleware.context.ExampleContext}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.1</a> at Feb 14, 2017 5:14:18 PM</p>
+</div>
+</div>
+</body>
+</html>

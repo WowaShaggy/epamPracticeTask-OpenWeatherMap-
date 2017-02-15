@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+<head>
+<style>body {
+  font-family: Helvetica;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 4px;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+  
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for specs.hotelgateway.inbound.non_loyalty.GuestListInformationRequest</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Mon Nov 10 15:01:45 MSK 2014 by Uladzimir_Ramaniuk</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>32.824 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure'>Guest List Information message should be redirected to TPFGateway</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I retrieve Guest List Information via Hotel Gateway</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>And:</div>
+</td>
+<td>
+<div class='block-text'>I retrieve Guest List Information via HMI</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Hotel Gateway response equals HMI response</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>hgwResponse == hmiResponse<br/>|           |  |<br/>|           |  AD <br/>|           |  LN:I/ECHO/FILBB<br/>|           |  LE:A/62208957/0001/CHAYAPATHY B//IGCOR   /KNGN/01/10NOV14/01/160009607/01/AX***********1001/1232<br/>|           |  LE:A/62208969/0001/CHAYAPATHY B//IGCOR   /KNGN/01/10NOV14/01/160009607/01/AX***********1001/1232<br/>|           |  LE:A/62208973/0001/CHAYAPATHY B//IGCOR   /KNGN/01/10NOV14/01/160009607/01/AX***********1001/1232<br/>|           |  LE:A/62322269/0001/CHAYAPATHY B//IGCOR   /KNGN/01/10NOV14/07/160009607/01/6<br/>|           false<br/>|           1258 differences (3% similarity)<br/>|           (&lt;html&gt;)\n(&lt;head&gt;\n&lt;meta http-equiv=&quot;)C(ontent-Type&quot; content=&quot;text)/(html;charset=)I(SO-8859-1&quot;/&gt;)\n(&lt;title&gt;)E(rror 5)0(3 Service Unavailable&lt;)/(title&gt;\n&lt;)/(head&gt;\n&lt;body&gt;\n&lt;h2&gt;)H(TTP) (ERROR: 503&lt;)/(h2&gt;\n&lt;p&gt;Problem accessing )/(Hotel)G(ateway. )R(eason:\n&lt;pre&gt;)   ( Service Unavailable&lt;)/(pre&gt;&lt;)/(p&gt;\n&lt;hr )/(&gt;&lt;i&gt;&lt;small&gt;Powered by Jetty:)/(/&lt;)/(small&gt;&lt;/i&gt;\n                                                )\n(                             ) (        )   (       \n                                                )\n(                             ) (        )   (       \n                                                )\n(                             ) (        )   (       \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n                                                \n&lt;)/(body&gt;\n&lt;)/(html&gt;)\n<br/>|           (AD ---)\n(LN:I/E-~------------------)C(HO------------------------)/(F------------)I(LBB---------)\n(L------)E(:A/622)0(8957------------------)/(0001---~-)/(CHAYAP~AT-----~----)H(Y--) (B----------)/(----~---------------------)/(I----)G(CO------)R(-------~-----)   (/KNGN----------------)/(01---)/(10N~OV14)/(01/160009607----------------)/(01)/(AX*********~**1001/1232-------------------------------------)\n(LE:A/62208969/0001/CHAYAPATHY) (B//IGCOR)   (/KNGN/01~/10NOV14/01/160009607/01/AX***********1001/1232-)\n(LE:A/62208973/0001/CHAYAPATHY) (B//IGCOR)   (/KNGN/01~/10NOV14/01/160009607/01/AX***********1001/1232-)\n(LE:A/62322269/0001/CHAYAPATHY) (B//IGCOR)   (/KNGN/01~/10NOV14/07/160009607----------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-------------------------------------------------~-)/(01----~-)/(6----)\n<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;/&gt;<br/>&lt;title&gt;Error 503 Service Unavailable&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>&lt;h2&gt;HTTP ERROR: 503&lt;/h2&gt;<br/>&lt;p&gt;Problem accessing /HotelGateway. Reason:<br/>&lt;pre&gt;    Service Unavailable&lt;/pre&gt;&lt;/p&gt;<br/>&lt;hr /&gt;&lt;i&gt;&lt;small&gt;Powered by Jetty://&lt;/small&gt;&lt;/i&gt;<br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>                                                <br/>&lt;/body&gt;<br/>&lt;/html&gt;<br/></pre>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

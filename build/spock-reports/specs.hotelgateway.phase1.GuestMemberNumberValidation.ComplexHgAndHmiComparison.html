@@ -1,0 +1,353 @@
+<!DOCTYPE html><html>
+<head>
+<style>body {
+  font-family: Helvetica;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 4px;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+  
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for specs.hotelgateway.phase1.GuestMemberNumberValidation.ComplexHgAndHmiComparison</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Tue Oct 14 14:50:12 FET 2014 by Uladzimir_Ramaniuk</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>15.447 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure'>Retrieve Guests</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I send a message with club number</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>And:</div>
+</td>
+<td>
+<div class='block-text'>I send the same message to HMI</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>I expect to receive the same response</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>clubNumberValue</th>
+<th class='ex-header'>type</th>
+</thead>
+<tbody>
+<tr class='ex-fail'>
+<td class='ex-value'>530030987</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>739986777</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>859987484</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>559986896</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>451882128</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>879987042</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>189987542</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>689987361</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>531234054</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>159988173</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>389987977</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>159989146</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>530664582</td>
+<td class='ex-value'>test</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>
+<div class='spec-status'>8/13 passed</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<div>[530030987, test]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == hmiResponse<br/>|        |  |<br/>|        |  CR <br/>|        |  VA:A/ECHO<br/>|        |  FG:P530030987////P/00004211<br/>|        |  NM:V/N////FMDS-BTOB-DEPOSIT/BC PCR<br/>|        |  PH:V//8005555555/B<br/>|        |  PH:V//8005555555/B<br/>|        |  AH:V/N//FMDS-BTOB-DEPOSIT B@3 RAVINIA DR STE 100 BLDG 3@ATLANTA GA 30346-2121@UNITED STATES<br/>|        |  VE:V/US<br/>|        false<br/>|        20 differences (90% similarity)<br/>|        CR \nVA:A/ECHO\nFG:P530030987////P/00004211\nNM:V/N////FMDS-BTOB-DEPOSIT/BC(_)PCR\nPH:V//800(-)555(-)55(---~---------)55(-----)/B\nAH:V/N//FMDS-BTOB-DEPOSIT B@3 RAVINIA DR STE 100 BLDG 3@ATLANTA GA 30346-2121@UNITED STATES\nVE:V/US\n<br/>|        CR \nVA:A/ECHO\nFG:P530030987////P/00004211\nNM:V/N////FMDS-BTOB-DEPOSIT/BC( )PCR\nPH:V//800(5)555(5)55(/B\nPH:V//800)55(55555)/B\nAH:V/N//FMDS-BTOB-DEPOSIT B@3 RAVINIA DR STE 100 BLDG 3@ATLANTA GA 30346-2121@UNITED STATES\nVE:V/US\n<br/>CR <br/>VA:A/ECHO<br/>FG:P530030987////P/00004211<br/>NM:V/N////FMDS-BTOB-DEPOSIT/BC_PCR<br/>PH:V//800-555-5555/B<br/>AH:V/N//FMDS-BTOB-DEPOSIT B@3 RAVINIA DR STE 100 BLDG 3@ATLANTA GA 30346-2121@UNITED STATES<br/>VE:V/US<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[451882128, test]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == hmiResponse<br/>|        |  |<br/>|        |  CR <br/>|        |  VA:D/ECHO/P /451882128/<br/>|        false<br/>|        128 differences (13% similarity)<br/>|        CR \nVA:(A)/ECHO(\n\nNM:V)/(N////WONG/JIM\n)P(H:V)/(/NONE\nAH:V/N//WONG J@PRIORITY CLUB SERVICE CENTER@PO BOX 6)4(0760@SAN JOSE CA 9)51(64-0760@UNITED STATES\nVE:V)/(US)\n<br/>|        CR \nVA:(D)/ECHO(-~-~----)/(--------------~)P( --)/(------~----------------------------------------------------)4(------------------)51(882128----------------~----)/(--)\n<br/>CR <br/>VA:A/ECHO<br/> <br/>NM:V/N////WONG/JIM<br/>PH:V//NONE<br/>AH:V/N//WONG J@PRIORITY CLUB SERVICE CENTER@PO BOX 640760@SAN JOSE CA 95164-0760@UNITED STATES<br/>VE:V/US<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[531234054, test]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == hmiResponse<br/>|        |  |<br/>|        |  CR <br/>|        |  VA:D/ECHO/P /531234054/<br/>|        false<br/>|        142 differences (14% similarity)<br/>|        CR \nVA:(A)/ECHO(\n\nNM:V)/(N////MONTOYA/JUSTIN\n)P(H:V)/(/80197)53(090/B\nAH:V/N//MONTOYA J@BASS HOTELS &amp; RESORTS@)12(75 W 22)40( S@WEST VALLEY CITY UT 8)4(119-1482@UNITED STATES\nVE:V)/(US)\n<br/>|        CR \nVA:(D)/ECHO(-~-~----)/(--------------------~)P( --)/(------)53(------~----------------------------------------)12(3------)40(5-----------------------)4(-----------------------~----)/(--)\n<br/>CR <br/>VA:A/ECHO<br/> <br/>NM:V/N////MONTOYA/JUSTIN<br/>PH:V//8019753090/B<br/>AH:V/N//MONTOYA J@BASS HOTELS &amp; RESORTS@1275 W 2240 S@WEST VALLEY CITY UT 84119-1482@UNITED STATES<br/>VE:V/US<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[159988173, test]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == hmiResponse<br/>|        |  |<br/>|        |  CR <br/>|        |  VA:A/ECHO<br/>|        |  FG:P159988173////P/00003210<br/>|        |  NM:V/N////FMDSPHONE/VANI<br/>|        |  PH:V//924927497/F<br/>|        |  AH:V/N//FMDSPHONE V@3 RAVINIA DR@ATLANTA GA 30346-2118@UNITED STATES<br/>|        |  VE:V/US<br/>|        false<br/>|        11 differences (93% similarity)<br/>|        CR \nVA:A/ECHO\nFG:P159988173////P/00003210\nNM:V/N////FMDSPHONE/VANI\nPH:V//(NONE-------)\nAH:V/N//FMDSPHONE V@3 RAVINIA DR@ATLANTA GA 30346-2118@UNITED STATES\nVE:V/US\n<br/>|        CR \nVA:A/ECHO\nFG:P159988173////P/00003210\nNM:V/N////FMDSPHONE/VANI\nPH:V//(924927497/F)\nAH:V/N//FMDSPHONE V@3 RAVINIA DR@ATLANTA GA 30346-2118@UNITED STATES\nVE:V/US\n<br/>CR <br/>VA:A/ECHO<br/>FG:P159988173////P/00003210<br/>NM:V/N////FMDSPHONE/VANI<br/>PH:V//NONE<br/>AH:V/N//FMDSPHONE V@3 RAVINIA DR@ATLANTA GA 30346-2118@UNITED STATES<br/>VE:V/US<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[530664582, test]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>response == hmiResponse<br/>|        |  |<br/>|        |  CR <br/>|        |  VA:D/ECHO/P /530664582/<br/>|        false<br/>|        133 differences (13% similarity)<br/>|        CR \nVA:(A)/ECHO(\n\nNM:V)/(N////MORGAN/CAROL\n)P(H:V)/(/NONE\nAH:V/N//MORGAN C@BASS HOTELS &amp; RESORTS@)3( RAVINIA DR STE 29)0(0@ATLANTA GA 303)4(6-)2(143@UNITED STATES\nVE:V)/(US)\n<br/>|        CR \nVA:(D)/ECHO(-~-~----)/(------------------~)P( --)/(5-----~---------------------------------------)3(------------------)0(66--------------)4(58)2(------------------~----)/(--)\n<br/>CR <br/>VA:A/ECHO<br/> <br/>NM:V/N////MORGAN/CAROL<br/>PH:V//NONE<br/>AH:V/N//MORGAN C@BASS HOTELS &amp; RESORTS@3 RAVINIA DR STE 2900@ATLANTA GA 30346-2143@UNITED STATES<br/>VE:V/US<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>
