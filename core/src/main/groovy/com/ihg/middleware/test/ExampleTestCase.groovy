@@ -18,6 +18,15 @@ abstract class ExampleTestCase extends Specification {
     HttpClient searchRegionsApiHttpClient
 
     @Autowired
+    HttpClient fiveDayForecastApiHttpClient
+
+    @Autowired
+    HttpClient dailyForecastApiHttpClient
+
+    @Autowired
+    HttpClient historicalDataApiHttpClient
+
+    @Autowired
     String APPid
 
 }

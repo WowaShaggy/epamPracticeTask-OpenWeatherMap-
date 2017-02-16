@@ -135,7 +135,7 @@ div.footer {
 <hr></hr>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Wed Feb 15 17:10:07 MSK 2017 by Uladzimir_Papeka</div>
+<div class='date-test-ran'>Created on Thu Feb 16 16:29:09 MSK 2017 by Uladzimir_Papeka</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -148,11 +148,11 @@ div.footer {
 <tbody>
 <tr>
 <td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>0.226 seconds</td>
+<td>0.0%</td>
+<td>0.408 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -166,7 +166,7 @@ div.footer {
 <tbody>
 <tr>
 <td colspan='10'>
-<div class='feature-description'>The user should check the data by id of the city</div>
+<div class='feature-description failure'>The user should check the data by id of the city</div>
 </td>
 </tr>
 <tr>
@@ -182,7 +182,21 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>City's name should be correct</div>
+<div class='block-text'>City's name should be correct and wind's speed should be positive</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>result.name == &quot;Irvine&quot;                                       //Irvine  //Honolulu //Porto  //Eindhoven<br/>|      |    |<br/>|      null false<br/>[cod:405, message:Internal error]<br/></pre>
+</li>
+</ul>
+</div>
+</div>
 </td>
 </tr>
 </tbody>

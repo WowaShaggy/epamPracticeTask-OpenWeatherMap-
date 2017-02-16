@@ -36,6 +36,28 @@ class ExampleContext extends AbstractContext {
     }
 
     @Bean
+    @Value('${five.day.forecast.host.url}')
+    HttpClient fiveDayForecastApiHttpClient(String url) {
+        new HttpClient(url)
+    }
+
+    @Bean
+    @Value('${daily.forecast.host.url}')
+    HttpClient dailyForecastApiHttpClient(String url) {
+        new HttpClient(url)
+    }
+
+    @Bean
+    @Value('${historical.data.host.url}')
+    HttpClient historicalDataApiHttpClient(String url) {
+        new HttpClient(url)
+    }
+
+
+
+
+
+    @Bean
     @Value('${APPid}')
     String APPid(String Appid) {
         Appid
