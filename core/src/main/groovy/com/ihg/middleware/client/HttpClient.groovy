@@ -67,7 +67,6 @@ class HttpClient {
         sendAndGetResponseEntity(params).body
     }
 
-
     ResponseEntity sendAndGetResponseEntity(params) {
         // mapping parameters for request
 

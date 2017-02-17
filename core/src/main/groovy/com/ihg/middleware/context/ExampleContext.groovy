@@ -47,14 +47,12 @@ class ExampleContext extends AbstractContext {
         new HttpClient(url)
     }
 
+
     @Bean
-    @Value('${historical.data.host.url}')
-    HttpClient historicalDataApiHttpClient(String url) {
+    @Value('${rectangle.zone.host.url}')
+    HttpClient rectangleZoneApiHttpClient(String url) {
         new HttpClient(url)
     }
-
-
-
 
 
     @Bean
@@ -63,3 +61,4 @@ class ExampleContext extends AbstractContext {
         Appid
     }
 }
+

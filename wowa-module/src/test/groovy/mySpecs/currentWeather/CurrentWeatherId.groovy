@@ -18,6 +18,7 @@ class CurrentWeatherId  extends ExampleTestCase{
         def slurper = new JsonSlurper()
         def result = slurper.parseText(response)
 
+
         then: "City's name should be correct and wind's speed should be positive"
         result.name == "Irvine"                                       //Irvine  //Honolulu //Porto  //Eindhoven
         result.wind.speed >= 0
