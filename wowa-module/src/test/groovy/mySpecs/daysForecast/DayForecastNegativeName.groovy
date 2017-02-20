@@ -3,7 +3,7 @@ package mySpecs.daysForecast
 import com.ihg.middleware.test.ExampleTestCase
 import groovy.json.JsonSlurper
 
-class DayForecastNegativeName  extends ExampleTestCase{
+class DayForecastNegativeName extends ExampleTestCase{
     def "The user should send request with incorrect name of the city"() {
         def locationValue = "Штормград"
         def modeValue = "json"
