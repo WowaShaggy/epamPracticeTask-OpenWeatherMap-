@@ -8,15 +8,17 @@
 //        def lonValue = 37.5
 //        def latValue = 55.5
 //        def cntValue = 10
+//        def modeV = "json"
 //
 //        when: "some"
 //        def response = searchRegionsApiHttpClient.send(
-//                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&cnt={cnt}&appid=${APPid}",
+//                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&cnt={cnt}&mode={mode}&appid=${APPid}",
 //                REQUEST_PARAMS_VARIABLES :
 //                        [
 //                                lon : lonValue,
 //                                lat : latValue,
 //                                cnt : cntValue,
+//                                mode : modeV
 //                        ]
 //        )
 //        def slurper = new JsonSlurper()

@@ -20,7 +20,7 @@ class DailyForecastName extends ExampleTestCase{
                         [
                                 location : locationValue,
                                 mode : modeValue,
-                                cnt: cntValue
+                                cnt: cntValue,
                         ]
         )
         def slurper = new JsonSlurper()
