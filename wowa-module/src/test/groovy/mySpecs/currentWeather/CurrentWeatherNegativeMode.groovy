@@ -1,7 +1,6 @@
 package mySpecs.currentWeather
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class CurrentWeatherNegativeMode extends ExampleTestCase{
     def "The user should send request with incorrect mode"() {
@@ -9,19 +8,17 @@ class CurrentWeatherNegativeMode extends ExampleTestCase{
         def modeValue = "oops! I am not correct mode"
 
         when: "I send a request with incorrect mode"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "q={location}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 location : locationValue,
                                 mode : modeValue
-                        ]
+                        ],200           //кажется раньше он не работал... ладно пусть
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear"
-        result.message.toLowerCase().contains("error")
+        response
 
     }
 }

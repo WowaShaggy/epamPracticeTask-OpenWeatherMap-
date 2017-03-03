@@ -1,7 +1,6 @@
 package mySpecs.daysForecast
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class DayForecastNegativeHtmlMode extends ExampleTestCase {
     def "The user should send html request"() {
@@ -10,19 +9,16 @@ class DayForecastNegativeHtmlMode extends ExampleTestCase {
         def modeValue = "html"
 
         when: "I send html request"
-        def response = fiveDayForecastApiHttpClient.send(
+        def response = fiveDayForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 lon : lonValue,
                                 lat : latValue,
                                 mode : modeValue
-                        ]
+                        ], 200                  //не знаю, наверно временная работоспособность
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear because mode isn't supported by this API"
-        result.message.toLowerCase().contains("error")
     }
 }

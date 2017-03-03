@@ -7,7 +7,7 @@ class XmlSlurperName extends ExampleTestCase{
         def modeValue = "xml"
 
         when: "I send a request with the name of the city"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "q={location}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

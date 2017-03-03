@@ -7,7 +7,7 @@ class CurrentWeatherName extends ExampleTestCase{
     def "The user should check the data by name of the city"() {
 
         when: "I send a request with the name of the city"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "q={location}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

@@ -1,7 +1,6 @@
 package mySpecs.dailyForecast
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class DailyForecastNegativeId extends ExampleTestCase{
     Random random = new Random();
@@ -11,20 +10,18 @@ class DailyForecastNegativeId extends ExampleTestCase{
         def modeValue = "json"
 
         when: "I send a request with incorrect id of the city"
-        def response = dailyForecastApiHttpClient.send(
+        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 id : idValue,
                                 mode : modeValue,
                                 cnt: cntValue,
-                        ]
+                        ],400
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear"
-        result.message.toLowerCase().contains("error")
+        response
     }
 
     public int RandomMethod(int listsSize){

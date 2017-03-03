@@ -11,7 +11,7 @@ class DayForecastId extends ExampleTestCase{
         def modeValue = "json"
 
         when: "I send a request with id of the city"
-        def response = fiveDayForecastApiHttpClient.send(
+        def response = fiveDayForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "id={id}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

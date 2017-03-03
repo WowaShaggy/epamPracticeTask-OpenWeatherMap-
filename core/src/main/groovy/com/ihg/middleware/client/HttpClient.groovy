@@ -2,6 +2,7 @@ package com.ihg.middleware.client
 
 import groovy.util.logging.Log4j
 import org.codehaus.groovy.runtime.GStringImpl
+import org.junit.Assert
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
@@ -13,7 +14,6 @@ import org.springframework.web.client.RestTemplate
 import java.nio.charset.StandardCharsets
 
 import static org.springframework.http.HttpMethod.POST
-
 /**
  * Custom class for call services for testing.
  * Based on @see org.springframework.web.client.RestTemplate.
@@ -63,9 +63,12 @@ class HttpClient {
      *      REQUEST_METHOD
      * @return String response from service.
      */
-    String send(params) {
-        sendAndGetResponseEntity(params).body
+    String sendAndVerifyResponseStatus(params, expectedCode = 200) {
+        ResponseEntity myResponse = sendAndGetResponseEntity(params);
+        Assert.assertEquals(myResponse.statusCode.value(), expectedCode);
+        myResponse.body
     }
+
 
     ResponseEntity sendAndGetResponseEntity(params) {
         // mapping parameters for request

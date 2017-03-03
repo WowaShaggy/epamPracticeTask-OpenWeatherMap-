@@ -7,7 +7,7 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase{
         def modeValue = "xml"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

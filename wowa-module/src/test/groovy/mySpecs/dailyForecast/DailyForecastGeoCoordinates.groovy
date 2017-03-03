@@ -14,7 +14,7 @@ class DailyForecastGeoCoordinates extends ExampleTestCase {
         def modeValue = "json"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = dailyForecastApiHttpClient.send(
+        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

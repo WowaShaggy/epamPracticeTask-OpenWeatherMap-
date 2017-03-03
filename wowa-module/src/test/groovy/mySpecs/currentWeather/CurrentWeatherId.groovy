@@ -7,7 +7,7 @@ class CurrentWeatherId  extends ExampleTestCase{
     def "The user should check the data by id of the city"() {
 
         when: "I send a request with id of the city"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "id={id}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [

@@ -1,7 +1,6 @@
 package mySpecs.dailyForecast
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class DailyForecastNegativeHtmlMode extends ExampleTestCase {
     Random random = new Random();
@@ -12,20 +11,18 @@ class DailyForecastNegativeHtmlMode extends ExampleTestCase {
         def modeValue = "html"
 
         when: "I send html request"
-        def response = dailyForecastApiHttpClient.send(
+        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING: "q={location}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES:
                         [
                                 location: locationValue,
                                 mode    : modeValue,
                                 cnt     : cntValue,
-                        ]
+                        ],400
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear"
-        result.message.toLowerCase().contains("error")
+        response
 
     }
 }

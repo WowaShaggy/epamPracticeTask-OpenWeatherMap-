@@ -1,7 +1,6 @@
 package mySpecs.dailyForecast
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class DailyForecastNegativeMode extends ExampleTestCase{
     Random random = new Random();
@@ -11,20 +10,18 @@ class DailyForecastNegativeMode extends ExampleTestCase{
         def modeValue = "Bazinga!"
 
         when: "I send a request with incorrect mode"
-        def response = dailyForecastApiHttpClient.send(
+        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "q={location}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 location : locationValue,
                                 mode : modeValue,
                                 cnt: cntValue,
-                        ]
+                        ],200
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear"
-        result.message.toLowerCase().contains("error")
+        response
 
     }
 

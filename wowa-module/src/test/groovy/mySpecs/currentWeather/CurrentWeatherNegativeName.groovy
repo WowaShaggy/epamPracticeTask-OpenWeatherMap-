@@ -1,25 +1,22 @@
 package mySpecs.currentWeather
 
 import com.ihg.middleware.test.ExampleTestCase
-import groovy.json.JsonSlurper
 
 class CurrentWeatherNegativeName extends ExampleTestCase{
     def "The user should send request with incorrect name of the city"() {
-        def locationValue = "Штормград"
+        def locationValue = "Штормградtttttttttttttt"
 
         when: "I send a request with incorrect name of the city"
-        def response = weatherApiHttpClient.send(
+        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "q={location}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 location : locationValue,
-                        ]
+                        ],404
         )
-        def slurper = new JsonSlurper()
-        def result = slurper.parseText(response)
 
         then: "Error message should appear"
-        result.message.toLowerCase().contains("error")
+        response
 
     }
 }

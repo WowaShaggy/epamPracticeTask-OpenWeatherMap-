@@ -12,7 +12,7 @@ class XmlSlurperId  extends ExampleTestCase{
         def modeValue = "xml"
 
         when: "I send a request with id of the city"
-        def response = dailyForecastApiHttpClient.send(
+        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
                 REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
