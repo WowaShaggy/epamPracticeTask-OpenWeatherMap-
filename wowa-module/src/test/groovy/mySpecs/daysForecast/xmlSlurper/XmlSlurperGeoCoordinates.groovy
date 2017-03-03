@@ -7,9 +7,6 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
     Random random = new Random();
 
     def "The user should get forecast list by geographic coordinates of the city"() {
-
-        def latValue = 51.44                                        //33.67   //21.31   //41.15    //51.44
-        def lonValue = 5.48                                         //-117.82 //-157.86 //-8.61    //5.48
         def modeValue = "xml"
 
         when: "I send a request with geographic coordinates of the city"
@@ -25,14 +22,22 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
         def result = new XmlSlurper().parseText(response)
 
         then: "City's name and other list's data should be correct"
-        result.location.name == "Eindhoven"                                 //Irvine  //Honolulu //Porto  //Eindhoven
-        result.location.country == "NL"                                 //US      //US       //PT      //NL
+        result.location.name == name
+        result.location.country == country
         result.sun.@rise.toString().startsWith("2017")
         result.sun.@set.toString().startsWith("2017")
         result.forecast.time.@from.getAt(RandomMethod(result.forecast.time.size())).toString().startsWith("2017")
         result.forecast.time.@to.getAt(RandomMethod(result.forecast.time.size())).toString().startsWith("2017")
         result.forecast.time.symbol.@number.getAt(RandomMethod(result.forecast.time.size())).toInteger() >= 0
         result.forecast.time.windSpeed.@mps.getAt(RandomMethod(result.forecast.time.size())).toDouble() >= 0
+
+        where:
+        lonValue | latValue | name        | country
+        5.48     | 51.44    |"Eindhoven"  | "NL"
+        -117.82  | 33.67    |"Irvine"     | "US"
+        -157.86  | 21.31    |"Honolulu"   | "US"
+        -8.61    | 41.15    |"Porto"      | "PT"
+
 
     }
 

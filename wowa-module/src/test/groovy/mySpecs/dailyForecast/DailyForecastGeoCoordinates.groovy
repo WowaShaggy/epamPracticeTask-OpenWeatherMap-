@@ -9,8 +9,6 @@ class DailyForecastGeoCoordinates extends ExampleTestCase {
 
     def "The user should get daily forecast by geographic coordinates of the city and number of days"() {
 
-        def latValue = 33.67                                         //33.67   //21.31   //41.15    //51.44
-        def lonValue = -117.82                                       //-117.82 //-157.86 //-8.61    //5.48
         def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
         // println cntValue                                          // В консольке будет видно количество
         def modeValue = "json"
@@ -30,13 +28,20 @@ class DailyForecastGeoCoordinates extends ExampleTestCase {
         def result = slurper.parseText(response)
 
         then: "City's name and other list's data should be correct"
-        result.city.name == "Irvine"                                 //Irvine  //Honolulu //Porto  //Eindhoven
+        result.city.name == name
         result.list.size() == result.cnt
         result.cnt == cntValue
         result.list.dt.get(RandomMethod(cntValue)) > 0
         result.list.temp.min.get(RandomMethod(cntValue)) >= 200         // возможно надо понизить, если вы ищите, например, Северный полюс
         result.list.clouds.get(RandomMethod(cntValue)) >= 0
         result.list.pressure.get(RandomMethod(cntValue)) >= 0
+
+        where:
+        lonValue | latValue | name
+        5.48     | 51.44    |"Eindhoven"
+        -117.82  | 33.67    |"Irvine"
+        -157.86  | 21.31    |"Honolulu"
+        -8.61    | 41.15    |"Porto"
 
     }
 

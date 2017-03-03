@@ -8,9 +8,7 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
 
     def "The user should get daily forecast by geographic coordinates of the city and number of days"() {
 
-        def latValue = 33.67                                         //33.67   //21.31   //41.15    //51.44
-        def lonValue = -117.82                                       //-117.82 //-157.86 //-8.61    //5.48
-        def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
+         def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
         // println cntValue                                          // В консольке будет видно количество
         def modeValue = "xml"
 
@@ -29,12 +27,19 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
         def result = new XmlSlurper().parseText(response)
 
         then: "City's name and other list's data should be correct"
-        result.location.name == "Irvine"                                 //Irvine  //Honolulu //Porto  //Eindhoven
-        result.location.country == "US"                                 //US      //US       //PT      //NL
+        result.location.name == name
+        result.location.country == country
         result.sun.@rise.toString().startsWith("2017")
         result.sun.@set.toString().startsWith("2017")
         result.forecast.time.@day.getAt(RandomMethod(cntValue)).toString().startsWith("2017")
         result.forecast.time.symbol.@number.getAt(RandomMethod(cntValue)).toInteger() >= 0
+
+        where:
+        lonValue | latValue | name        | country
+        5.48     | 51.44    |"Eindhoven"  | "NL"
+        -117.82  | 33.67    |"Irvine"     | "US"
+        -157.86  | 21.31    |"Honolulu"   | "US"
+        -8.61    | 41.15    |"Porto"      | "PT"
 
     }
 
