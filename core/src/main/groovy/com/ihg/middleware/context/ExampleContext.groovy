@@ -54,11 +54,22 @@ class ExampleContext extends AbstractContext {
         new HttpClient(url)
     }
 
+    //--------------------/ Тут уже новые пошли
+
+    @Bean
+    @Value('${test.url}')
+    HttpClient currentWeatherApiHttpClient(String url, String version, String tag) {
+        new HttpClient(url, "2.5", "weather")
+    }
+
 
     @Bean
     @Value('${APPid}')
     String APPid(String Appid) {
         Appid
     }
+
+
+
 }
 

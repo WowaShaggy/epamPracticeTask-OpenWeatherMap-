@@ -2,17 +2,21 @@ package mySpecs.currentWeather
 
 import com.ihg.middleware.test.ExampleTestCase
 import groovy.json.JsonSlurper
+import mySpecs.RequestBuilder
 
 class CurrentWeatherId  extends ExampleTestCase{
     def "The user should check the data by id of the city"() {
 
         when: "I send a request with id of the city"
-        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "id={id}&appid=${APPid}",
+        def response = currentWeatherApiHttpClient.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(id,"${APPid}").build()
+
+               /* REQUEST_PARAMS_STRING : "id={id}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 id : id,
-                        ]
+                        ]*/
         )
         def slurper = new JsonSlurper()
         def result = slurper.parseText(response)

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy" line="51" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1df949a7-4260-457b-b5f7-840984b9fef1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/RequestBuilder.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/client/HttpClient$_sendAndGetResponseEntity_closure1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/client/HttpClient$_sendAndGetResponseEntity_closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/client/HttpClient.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/client/HttpClient.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/context/ExampleContext.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/context/ExampleContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/test/ExampleTestCase.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/ihg/middleware/test/ExampleTestCase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.class" afterPath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherId.class" afterPath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherId.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherName.class" afterPath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherName.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherNegativeId.class" afterPath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherNegativeId.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherNegativeName.class" afterPath="$PROJECT_DIR$/wowa-module/build/classes/test/mySpecs/currentWeather/CurrentWeatherNegativeName.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -17,8 +22,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherName.html" afterPath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherName.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherNegativeId.html" afterPath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherNegativeId.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherNegativeName.html" afterPath="$PROJECT_DIR$/build/spock-reports/mySpecs.currentWeather.CurrentWeatherNegativeName.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/resources/main/conf/environments/qa-devtest/example.properties" afterPath="$PROJECT_DIR$/core/build/resources/main/conf/environments/qa-devtest/example.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy" afterPath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy" afterPath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy" afterPath="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties" afterPath="$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy" />
@@ -30,30 +38,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastGeoCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeEmptyRequest.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeEmptyRequest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeHtmlMode.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeHtmlMode.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeMode.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeMode.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastGeoCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeEmptyRequest.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeEmptyRequest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeHtmlMode.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeHtmlMode.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeMode.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeMode.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeName.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperGeoCoordinates.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperId.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperId.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperName.groovy" afterPath="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/xmlSlurper/XmlSlurperName.groovy" />
     </list>
     <ignored path="testing-framework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,104 +154,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DayForecastGeoCoordinates.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastGeoCoordinates.groovy">
+      <file leaf-file-name="RequestBuilder.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/RequestBuilder.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="83">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlSlurperName.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding>
-                <element signature="e#30#76#0" expanded="true" />
+                <element signature="e#43#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DayForecastId.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastId.groovy">
+      <file leaf-file-name="CurrentWeatherNegativeMode.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeMode.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="13" column="79" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastName.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastName.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeCoordinates.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeCoordinates.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeEmptyRequest.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeEmptyRequest.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeHtmlMode.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeHtmlMode.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeId.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeId.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeMode.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeMode.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayForecastNegativeName.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeName.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyForecastNegativeHtmlMode.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeHtmlMode.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="77" />
-              <folding />
+            <state relative-caret-position="296">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <folding>
+                <element signature="e#32#78#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -288,6 +204,9 @@
       <find>url</find>
       <find>search.regions.host.url</find>
       <find>Request headers</find>
+      <find>params</find>
+      <find>REQUEST_PARAMS_STRING</find>
+      <find>REQUEST_PARAMS_VARIABLES</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -1136,33 +1055,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/historicalData/HistoricalDataGeoCoordinates.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/ultravioletIndex/UltravioletIndex.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/historicalData/HistoricalDataId.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperNegativeCoordinates.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherZipCode.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherRectangleZone.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherCitiesInCycle.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/Response.json" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeAppid.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherCitiesInCycle.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherRectangleZone.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherZipCode.groovy" />
-        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy" />
-        <option value="$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties" />
-        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy" />
-        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeId.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeName.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeCoordinates.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeEmptyRequest.groovy" />
-        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeMode.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperId.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperName.groovy" />
@@ -1187,6 +1084,28 @@
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeId.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeMode.groovy" />
         <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeName.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/TestProperties.groovy" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/Builder.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Request.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Requests.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Builder.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/TestClass.groovy" />
+        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy" />
+        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeCoordinates.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy" />
+        <option value="$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeEmptyRequest.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeId.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeMode.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeName.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy" />
+        <option value="$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/RequestBuilder.groovy" />
       </list>
     </option>
   </component>
@@ -1218,8 +1137,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1301,120 +1218,6 @@
               <option name="myItemId" value="mySpecs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daysForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamPracticeTask-OpenWeatherMap-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wowa-module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpecs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daysForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlSlurper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamPracticeTask-OpenWeatherMap-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wowa-module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpecs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dailyForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamPracticeTask-OpenWeatherMap-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wowa-module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpecs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dailyForecast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlSlurper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1485,36 +1288,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="xmlSlurper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing-framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamPracticeTask-OpenWeatherMap-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wowa-module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpecs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1685,13 +1458,11 @@
               <option name="myItemId" value="middleware" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1715,22 +1486,11 @@
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/build.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-OpenWeatherMap-\wowa-module\src\test\groovy\specs\wowa" />
-      <recent name="D:\EndeavorSDKTestsRepository\middleware-test\testing-framework\example-project-test-cases\src\test\groovy\specs\hotelgateway" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="specs.hotelgateway.inbound.non_loyalty" />
       <recent name="specs.hotelgateway" />
       <recent name="specs.hotelgateway.inbound" />
       <recent name="specs.hotelgateway.loyalty_operations" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="specs.example" />
-      <recent name="com.ihg.middleware.test" />
-      <recent name="specs.hotelgateway.hcm_service_integration" />
-      <recent name="specs.hotelgateway.acitv_vault_service_integration" />
-      <recent name="specs.hotelgateway.defects" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\EndeavorSDKTestsRepository\middleware-test\testing-framework\core\src\main\resources\conf\environments\int-devtest" />
@@ -1739,20 +1499,31 @@
       <recent name="D:\EndeavorSDKTestsRepository\middleware-test\testing-framework" />
       <recent name="D:\EndeavorSDKTestsRepository\middleware-test\testing-framework\example-project-test-cases" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="specs.example" />
+      <recent name="com.ihg.middleware.test" />
+      <recent name="specs.hotelgateway.hcm_service_integration" />
+      <recent name="specs.hotelgateway.acitv_vault_service_integration" />
+      <recent name="specs.hotelgateway.defects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-OpenWeatherMap-\wowa-module\src\test\groovy\specs\wowa" />
+      <recent name="D:\EndeavorSDKTestsRepository\middleware-test\testing-framework\example-project-test-cases\src\test\groovy\specs\hotelgateway" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.DayForecastNegativeName">
-    <configuration default="false" name="DayForecastNegativeEmptyRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.mySpecs.currentWeather in wowa-module_test">
+    <configuration default="false" name="CurrentWeatherNegativeName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="mySpecs.daysForecast.*" />
+          <option name="PATTERN" value="mySpecs.currentWeather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="wowa-module_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mySpecs.daysForecast" />
-      <option name="MAIN_CLASS_NAME" value="mySpecs.daysForecast.DayForecastNegativeEmptyRequest" />
+      <option name="PACKAGE_NAME" value="mySpecs.currentWeather" />
+      <option name="MAIN_CLASS_NAME" value="mySpecs.currentWeather.CurrentWeatherNegativeName" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1767,18 +1538,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DayForecastNegativeHtmlMode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="XmlSlurperGeoCoordinates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="mySpecs.daysForecast.*" />
+          <option name="PATTERN" value="mySpecs.currentWeather.xmlSlurper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="wowa-module_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mySpecs.daysForecast" />
-      <option name="MAIN_CLASS_NAME" value="mySpecs.daysForecast.DayForecastNegativeHtmlMode" />
+      <option name="PACKAGE_NAME" value="mySpecs.currentWeather.xmlSlurper" />
+      <option name="MAIN_CLASS_NAME" value="mySpecs.currentWeather.xmlSlurper.XmlSlurperGeoCoordinates" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1793,18 +1564,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DayForecastNegativeId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="XmlSlurperId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="mySpecs.daysForecast.*" />
+          <option name="PATTERN" value="mySpecs.currentWeather.xmlSlurper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="wowa-module_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mySpecs.daysForecast" />
-      <option name="MAIN_CLASS_NAME" value="mySpecs.daysForecast.DayForecastNegativeId" />
+      <option name="PACKAGE_NAME" value="mySpecs.currentWeather.xmlSlurper" />
+      <option name="MAIN_CLASS_NAME" value="mySpecs.currentWeather.xmlSlurper.XmlSlurperId" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1819,18 +1590,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DayForecastNegativeMode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="XmlSlurperName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="mySpecs.daysForecast.*" />
+          <option name="PATTERN" value="mySpecs.currentWeather.xmlSlurper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="wowa-module_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mySpecs.daysForecast" />
-      <option name="MAIN_CLASS_NAME" value="mySpecs.daysForecast.DayForecastNegativeMode" />
+      <option name="PACKAGE_NAME" value="mySpecs.currentWeather.xmlSlurper" />
+      <option name="MAIN_CLASS_NAME" value="mySpecs.currentWeather.xmlSlurper.XmlSlurperName" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1845,20 +1616,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DayForecastNegativeName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="mySpecs.currentWeather in wowa-module_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="mySpecs.daysForecast.*" />
+          <option name="PATTERN" value="mySpecs.currentWeather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="wowa-module_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mySpecs.daysForecast" />
-      <option name="MAIN_CLASS_NAME" value="mySpecs.daysForecast.DayForecastNegativeName" />
+      <option name="PACKAGE_NAME" value="mySpecs.currentWeather" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -2311,19 +2082,19 @@
       <item index="4" class="java.lang.String" itemvalue="JUnit.specs.hotelgateway.inbound.loyalty.alliance_member_account_validation in hotel-gateway-test-cases" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.ExtendedLatinCharactersInNameAndAddress.Retrieve Member with Extended Latin Characters in Name, Address" />
       <item index="6" class="java.lang.String" itemvalue="JUnit.CompareEnrollmentResponseFromHMIAndHG.Compare member enrollment response from Hotel Gateway and HMI" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeEmptyRequest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeHtmlMode" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeId" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeMode" />
-      <item index="11" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeName" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.CurrentWeatherNegativeName" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.XmlSlurperGeoCoordinates" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.XmlSlurperId" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.XmlSlurperName" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.mySpecs.currentWeather in wowa-module_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeName" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeMode" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeId" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeHtmlMode" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DayForecastNegativeEmptyRequest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.mySpecs.currentWeather in wowa-module_test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.XmlSlurperName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.XmlSlurperId" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.XmlSlurperGeoCoordinates" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CurrentWeatherNegativeName" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2712,35 +2483,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DayForecastNegativeHtmlMode - 2017.03.03 at 16h 04m 19s.xml">
-      <configuration name="DayForecastNegativeHtmlMode" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeId - 2017.03.07 at 16h 49m 58s.xml">
+      <configuration name="CurrentWeatherNegativeId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeHtmlMode - 2017.03.03 at 16h 04m 35s.xml">
-      <configuration name="DayForecastNegativeHtmlMode" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeId - 2017.03.07 at 16h 50m 13s.xml">
+      <configuration name="CurrentWeatherNegativeId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeHtmlMode - 2017.03.03 at 16h 04m 45s.xml">
-      <configuration name="DayForecastNegativeHtmlMode" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeMode - 2017.03.07 at 16h 52m 10s.xml">
+      <configuration name="CurrentWeatherNegativeMode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeId - 2017.03.03 at 16h 05m 21s.xml">
-      <configuration name="DayForecastNegativeId" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeMode - 2017.03.07 at 16h 52m 30s.xml">
+      <configuration name="CurrentWeatherNegativeMode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeMode - 2017.03.03 at 16h 05m 43s.xml">
-      <configuration name="DayForecastNegativeMode" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeName - 2017.03.07 at 16h 53m 43s.xml">
+      <configuration name="CurrentWeatherNegativeName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeName - 2017.03.03 at 16h 06m 07s.xml">
-      <configuration name="DayForecastNegativeName" configurationId="JUnit" />
+    <history-entry file="CurrentWeatherNegativeName - 2017.03.07 at 16h 53m 57s.xml">
+      <configuration name="CurrentWeatherNegativeName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeName - 2017.03.03 at 16h 06m 19s.xml">
-      <configuration name="DayForecastNegativeName" configurationId="JUnit" />
+    <history-entry file="XmlSlurperGeoCoordinates - 2017.03.07 at 16h 55m 57s.xml">
+      <configuration name="XmlSlurperGeoCoordinates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeName - 2017.03.03 at 16h 06m 37s.xml">
-      <configuration name="DayForecastNegativeName" configurationId="JUnit" />
+    <history-entry file="XmlSlurperId - 2017.03.07 at 16h 57m 07s.xml">
+      <configuration name="XmlSlurperId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeName - 2017.03.03 at 16h 07m 07s.xml">
-      <configuration name="DayForecastNegativeName" configurationId="JUnit" />
+    <history-entry file="XmlSlurperName - 2017.03.07 at 16h 58m 45s.xml">
+      <configuration name="XmlSlurperName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DayForecastNegativeName - 2017.03.03 at 16h 07m 37s.xml">
-      <configuration name="DayForecastNegativeName" configurationId="JUnit" />
+    <history-entry file="mySpecs_currentWeather_in_wowa-module_test - 2017.03.07 at 16h 58m 56s.xml">
+      <configuration name="mySpecs.currentWeather in wowa-module_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -2754,7 +2525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2765,13 +2536,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45178765" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3726977" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3726977" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.336887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22707888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2786,41 +2558,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45178765" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50595886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3726977" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.336887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -3630,7 +3368,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="685" />
+      <option name="time" value="686" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3639,230 +3377,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperNegativeCoordinates.groovy" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.3/e9f92799cc8fe8afa7918cdb34a547bcc593701d/groovy-all-2.3.3-sources.jar!/groovy/json/JsonSlurper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="203" column="18" lean-forward="false" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/a333983db63673aa9fa7072a7936518a49e21308/spring-web-3.2.9.RELEASE-sources.jar!/org/springframework/http/HttpEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeAppid.groovy" />
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherCitiesInCycle.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherRectangleZone.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/broken/CurrentWeatherZipCode.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#70#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/Response.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/JmsClient.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/DbClient.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/AbstractContext.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-          <folding>
-            <element signature="e#35#67#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeCoordinates.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeId.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeEmptyRequest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeMode.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeName.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperId.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="14" column="77" lean-forward="false" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperName.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastGeoCoordinates.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="16" column="77" lean-forward="false" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3870,7 +3388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3878,7 +3395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
           <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3886,7 +3402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="13" column="64" lean-forward="false" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3894,7 +3409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3902,7 +3416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="77" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3910,15 +3423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeName.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3926,7 +3430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3934,7 +3437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="79" lean-forward="false" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3942,7 +3444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="79" lean-forward="false" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3950,23 +3451,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastGeoCoordinates.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="e#30#76#0" expanded="true" />
+            <element signature="e#30#76#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastId.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
+        <state relative-caret-position="204">
           <caret line="13" column="79" lean-forward="false" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
           <folding />
         </state>
@@ -3998,7 +3498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeHtmlMode.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="221">
           <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="77" />
           <folding />
         </state>
@@ -4030,9 +3530,274 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/daysForecast/DayForecastNegativeName.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/0.7-groovy-2.0/19f1e62a5094604766f83e55a693b9cdac3b271a/spock-core-0.7-groovy-2.0-sources.jar!/spock/lang/Specification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/TestProperties.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Builder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Requests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Request.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/Builder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/xmlSlurper/XmlSlurperName.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/a333983db63673aa9fa7072a7936518a49e21308/spring-web-3.2.9.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastNegativeName.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/a333983db63673aa9fa7072a7936518a49e21308/spring-web-3.2.9.RELEASE-sources.jar!/org/springframework/http/client/ClientHttpRequestFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/e44a3cdcc20be53daad2a055cb40474d3e830bf2/spring-beans-3.2.9.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/Autowired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#3176#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/dailyForecast/DailyForecastGeoCoordinates.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/a333983db63673aa9fa7072a7936518a49e21308/spring-web-3.2.9.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="177" column="74" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/TestClass.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/test/ExampleTestCase.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/conf/environments/qa-devtest/example.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeCoordinates.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/context/ExampleContext.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/groovy/com/ihg/middleware/client/HttpClient.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="75" column="11" lean-forward="false" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+          <folding>
+            <element signature="e#35#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeEmptyRequest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="58" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherId.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeId.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="61" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherName.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherGeoCoordinates.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeName.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="63" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperGeoCoordinates.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="78" />
+          <folding>
+            <element signature="e#43#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperId.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="63" />
+          <folding>
+            <element signature="e#43#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/RequestBuilder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/xmlSlurper/XmlSlurperName.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="e#43#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wowa-module/src/test/groovy/mySpecs/currentWeather/CurrentWeatherNegativeMode.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#32#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,20 +1,24 @@
 package mySpecs.currentWeather.xmlSlurper
 
 import com.ihg.middleware.test.ExampleTestCase
+import mySpecs.RequestBuilder
 
 class XmlSlurperGeoCoordinates extends ExampleTestCase{
     def "The user should check the data by geographic coordinates of the city"() {
-        def modeValue = "xml"
+        def mode = "xml"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
+        def response = currentWeatherApiHttpClient.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(lonValue,latValue, mode,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 lon : lonValue,
                                 lat : latValue,
                                 mode : modeValue,
-                        ]
+                        ]*/
         )
 
         def result = new XmlSlurper().parseText(response)

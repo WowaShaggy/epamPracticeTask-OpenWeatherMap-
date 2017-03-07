@@ -1,19 +1,23 @@
 package mySpecs.currentWeather.xmlSlurper
 
 import com.ihg.middleware.test.ExampleTestCase
+import mySpecs.RequestBuilder
 
 class XmlSlurperId extends ExampleTestCase{
     def "The user should check the data by id of the city"() {
-        def modeValue = "xml"
+        def mode = "xml"
 
         when: "I send a request with id of the city"
-        def response = weatherApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "id={id}&mode={mode}&appid=${APPid}",
+        def response = currentWeatherApiHttpClient.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(id, mode,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "id={id}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 id : id,
                                 mode : modeValue,
-                        ]
+                        ]*/
         )
 
         def result = new XmlSlurper().parseText(response)

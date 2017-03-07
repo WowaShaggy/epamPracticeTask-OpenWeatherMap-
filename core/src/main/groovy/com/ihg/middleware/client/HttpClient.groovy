@@ -47,6 +47,16 @@ class HttpClient {
     }
 
     /**
+     * Constructor with request destination configuration.
+     * @param hostUrl - URL to send requests.
+     *        version - some version, such "2.5"
+     *        tag - search keyword
+     */
+    HttpClient(String hostUrl, String version, String tag) {
+        this.hostUrl = hostUrl+"/"+version+"/"+tag
+    }
+
+    /**
      * A client for call services.
      */
     @Autowired
@@ -64,11 +74,35 @@ class HttpClient {
      * @return String response from service.
      */
     String sendAndVerifyResponseStatus(params, expectedCode = 200) {
+
         ResponseEntity myResponse = sendAndGetResponseEntity(params);
         Assert.assertEquals(myResponse.statusCode.value(), expectedCode);
         myResponse.body
     }
 
+   /* static class RequestBuilder {
+
+        public Map<String, String> REQUEST_PARAMS_VARIABLES;
+        public Map<String, String> REQUEST_HEADERS;
+        public Map<String, String> REQUEST_METHOD;
+        public Map<String, String> REQUEST_BODY;
+        public String REQUEST_PARAMS_STRING = "";
+
+        RequestBuilder(double lon, double lat, String key) {
+            REQUEST_PARAMS_VARIABLES = new HashMap<>();
+            REQUEST_PARAMS_VARIABLES.put("lon", lon);
+            REQUEST_PARAMS_VARIABLES.put("lat", lat);
+            REQUEST_PARAMS_VARIABLES.put("appid", key);
+        }
+
+        public build() {
+            for (Map.Entry<String, String> entry : REQUEST_PARAMS_VARIABLES.entrySet())
+            {
+                REQUEST_PARAMS_STRING += (entry.getKey()+"="+entry.getValue()+"&");
+            }
+            this;
+        }
+    }*/
 
     ResponseEntity sendAndGetResponseEntity(params) {
         // mapping parameters for request
@@ -109,6 +143,9 @@ class HttpClient {
 
         response
     }
+
+
+
 }
 
 
