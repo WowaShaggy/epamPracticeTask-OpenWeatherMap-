@@ -26,8 +26,14 @@ abstract class ExampleTestCase extends Specification {
     @Autowired
     HttpClient rectangleZoneApiHttpClient
 
+    //---------------------- New Clients
+
     @Autowired
     HttpClient currentWeatherApiHttpClient
+
+    @Autowired
+    HttpClient daysForecastApiHttpClient
+
 
     @Autowired
     String APPid

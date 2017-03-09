@@ -2,23 +2,27 @@ package mySpecs.daysForecast
 
 import com.ihg.middleware.test.ExampleTestCase
 import groovy.json.JsonSlurper
+import mySpecs.RequestBuilder
 
 class DayForecastGeoCoordinates extends ExampleTestCase {
 
     Random random = new Random();
 
     def "The user should get forecast list by geographic coordinates of the city"() {
-        def modeValue = "json"
+        def mode = "json"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = fiveDayForecastApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
+        def response = daysForecastApiHttpClient.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(lonValue,latValue, mode,"${APPid}").build()
+
+               /* REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 lat : latValue,
                                 lon : lonValue,
                                 mode : modeValue
-                        ]
+                        ]*/
         )
         def slurper = new JsonSlurper()
         def result = slurper.parseText(response)

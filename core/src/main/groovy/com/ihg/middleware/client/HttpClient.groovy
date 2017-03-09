@@ -80,30 +80,6 @@ class HttpClient {
         myResponse.body
     }
 
-   /* static class RequestBuilder {
-
-        public Map<String, String> REQUEST_PARAMS_VARIABLES;
-        public Map<String, String> REQUEST_HEADERS;
-        public Map<String, String> REQUEST_METHOD;
-        public Map<String, String> REQUEST_BODY;
-        public String REQUEST_PARAMS_STRING = "";
-
-        RequestBuilder(double lon, double lat, String key) {
-            REQUEST_PARAMS_VARIABLES = new HashMap<>();
-            REQUEST_PARAMS_VARIABLES.put("lon", lon);
-            REQUEST_PARAMS_VARIABLES.put("lat", lat);
-            REQUEST_PARAMS_VARIABLES.put("appid", key);
-        }
-
-        public build() {
-            for (Map.Entry<String, String> entry : REQUEST_PARAMS_VARIABLES.entrySet())
-            {
-                REQUEST_PARAMS_STRING += (entry.getKey()+"="+entry.getValue()+"&");
-            }
-            this;
-        }
-    }*/
-
     ResponseEntity sendAndGetResponseEntity(params) {
         // mapping parameters for request
 

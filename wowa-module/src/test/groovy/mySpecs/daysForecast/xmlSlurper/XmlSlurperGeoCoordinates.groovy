@@ -1,23 +1,27 @@
 package mySpecs.daysForecast.xmlSlurper
 
 import com.ihg.middleware.test.ExampleTestCase
+import mySpecs.RequestBuilder
 
 class XmlSlurperGeoCoordinates extends ExampleTestCase {
 
     Random random = new Random();
 
     def "The user should get forecast list by geographic coordinates of the city"() {
-        def modeValue = "xml"
+        def mode = "xml"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = fiveDayForecastApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
+        def response = daysForecastApiHttpClient.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(lonValue,latValue, mode,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 lat : latValue,
                                 lon : lonValue,
                                 mode : modeValue
-                        ]
+                        ]*/
         )
         def result = new XmlSlurper().parseText(response)
 
