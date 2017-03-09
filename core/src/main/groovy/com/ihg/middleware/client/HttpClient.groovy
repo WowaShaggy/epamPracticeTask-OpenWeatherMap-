@@ -57,6 +57,16 @@ class HttpClient {
     }
 
     /**
+     * Constructor with request destination configuration.
+     * @param hostUrl - URL to send requests.
+     *        version - some version, such "2.5"
+     *        tag - search keyword
+     */
+    HttpClient(String hostUrl, String version, String tag, String tag2) {
+        this.hostUrl = hostUrl+"/"+version+"/"+tag+"/"+tag2
+    }
+
+    /**
      * A client for call services.
      */
     @Autowired

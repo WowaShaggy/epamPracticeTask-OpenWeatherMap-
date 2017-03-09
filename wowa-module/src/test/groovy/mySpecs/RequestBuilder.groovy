@@ -54,6 +54,33 @@ class RequestBuilder {
         REQUEST_PARAMS_VARIABLES.put("appid", key);
     }
 
+    RequestBuilder(double lon, double lat, String mode, int cnt, String key) {
+        REQUEST_PARAMS_VARIABLES = new HashMap<>();
+        REQUEST_PARAMS_VARIABLES.put("lon", lon);
+        REQUEST_PARAMS_VARIABLES.put("lat", lat);
+        REQUEST_PARAMS_VARIABLES.put("mode", mode);
+        REQUEST_PARAMS_VARIABLES.put("cnt", cnt);
+        REQUEST_PARAMS_VARIABLES.put("appid", key);
+    }
+
+    RequestBuilder(int id, String mode, int cnt ,String key) {
+        REQUEST_PARAMS_VARIABLES = new HashMap<>();
+        REQUEST_PARAMS_VARIABLES.put("id", id);
+        REQUEST_PARAMS_VARIABLES.put("mode", mode);
+        REQUEST_PARAMS_VARIABLES.put("cnt", cnt);
+        REQUEST_PARAMS_VARIABLES.put("appid", key);
+    }
+
+    RequestBuilder(String name, String mode, int cnt ,String key) {
+        REQUEST_PARAMS_VARIABLES = new HashMap<>();
+        REQUEST_PARAMS_VARIABLES.put("q", name);
+        REQUEST_PARAMS_VARIABLES.put("mode", mode);
+        REQUEST_PARAMS_VARIABLES.put("cnt", cnt);
+        REQUEST_PARAMS_VARIABLES.put("appid", key);
+    }
+
+
+
 
     public build() {
         for (Map.Entry<String, String> entry : REQUEST_PARAMS_VARIABLES.entrySet())

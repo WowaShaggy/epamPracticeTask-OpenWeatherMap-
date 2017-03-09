@@ -2,6 +2,7 @@ package mySpecs.dailyForecast
 
 import com.ihg.middleware.test.ExampleTestCase
 import groovy.json.JsonSlurper
+import mySpecs.RequestBuilder
 
 class DailyForecastId extends ExampleTestCase{
 
@@ -10,17 +11,20 @@ class DailyForecastId extends ExampleTestCase{
     def "The user should get daily forecast by id of the city and number of days"() {
         def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
         //println cntValue                                           // В консольке будет видно количество
-        def modeValue = "json"
+        def mode = "json"
 
         when: "I send a request with id of the city"
-        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
+        def response = dailyForecastApiHttpClientNew.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(id, mode, cntValue,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 id : id,
                                 mode : modeValue,
                                 cnt: cntValue
-                        ]
+                        ]*/
         )
         def slurper = new JsonSlurper()
         def result = slurper.parseText(response)

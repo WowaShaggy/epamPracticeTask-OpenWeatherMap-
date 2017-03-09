@@ -1,6 +1,7 @@
 package mySpecs.dailyForecast.xmlSlurper
 
 import com.ihg.middleware.test.ExampleTestCase
+import mySpecs.RequestBuilder
 
 class XmlSlurperId  extends ExampleTestCase{
 
@@ -9,17 +10,20 @@ class XmlSlurperId  extends ExampleTestCase{
     def "The user should get daily forecast by id of the city and number of days"() {
         def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
         //println cntValue                                           // В консольке будет видно количество
-        def modeValue = "xml"
+        def mode = "xml"
 
         when: "I send a request with id of the city"
-        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
+        def response = dailyForecastApiHttpClientNew.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(id, mode, cntValue,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "id={id}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 id : id,
                                 mode : modeValue,
                                 cnt: cntValue
-                        ]
+                        ]*/
         )
 
         def result = new XmlSlurper().parseText(response)

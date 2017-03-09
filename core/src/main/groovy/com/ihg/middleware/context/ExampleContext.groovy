@@ -68,6 +68,11 @@ class ExampleContext extends AbstractContext {
         new HttpClient(url, "2.5", "forecast")
     }
 
+    @Bean
+    @Value('${test.url}')
+    HttpClient dailyForecastApiHttpClientNew(String url, String version, String tag, String tag2) {
+        new HttpClient(url, "2.5", "forecast", "daily")
+    }
 
     @Bean
     @Value('${APPid}')

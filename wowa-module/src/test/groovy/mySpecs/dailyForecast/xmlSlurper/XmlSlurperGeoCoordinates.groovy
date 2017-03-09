@@ -1,6 +1,7 @@
 package mySpecs.dailyForecast.xmlSlurper
 
 import com.ihg.middleware.test.ExampleTestCase
+import mySpecs.RequestBuilder
 
 class XmlSlurperGeoCoordinates extends ExampleTestCase {
 
@@ -8,20 +9,23 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
 
     def "The user should get daily forecast by geographic coordinates of the city and number of days"() {
 
-         def cntValue = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
-        // println cntValue                                          // В консольке будет видно количество
-        def modeValue = "xml"
+        def cnt = random.nextInt(16)+1                          // Рандомное количество дней, от 1 до 16
+        // println cnt                                          // В консольке будет видно количество
+        def mode = "xml"
 
         when: "I send a request with geographic coordinates of the city"
-        def response = dailyForecastApiHttpClient.sendAndVerifyResponseStatus(
-                REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&cnt={cnt}&mode={mode}&appid=${APPid}",
+        def response = dailyForecastApiHttpClientNew.sendAndVerifyResponseStatus(
+
+                new RequestBuilder(lonValue,latValue, mode, cnt,"${APPid}").build()
+
+                /*REQUEST_PARAMS_STRING : "lat={lat}&lon={lon}&cnt={cnt}&mode={mode}&appid=${APPid}",
                 REQUEST_PARAMS_VARIABLES :
                         [
                                 lat : latValue,
                                 lon : lonValue,
                                 mode : modeValue,
                                 cnt: cntValue
-                        ]
+                        ]*/
         )
 
         def result = new XmlSlurper().parseText(response)
@@ -31,8 +35,8 @@ class XmlSlurperGeoCoordinates extends ExampleTestCase {
         result.location.country == country
         result.sun.@rise.toString().startsWith("2017")
         result.sun.@set.toString().startsWith("2017")
-        result.forecast.time.@day.getAt(RandomMethod(cntValue)).toString().startsWith("2017")
-        result.forecast.time.symbol.@number.getAt(RandomMethod(cntValue)).toInteger() >= 0
+        result.forecast.time.@day.getAt(RandomMethod(cnt)).toString().startsWith("2017")
+        result.forecast.time.symbol.@number.getAt(RandomMethod(cnt)).toInteger() >= 0
 
         where:
         lonValue | latValue | name        | country
